@@ -1,8 +1,7 @@
 import { actions } from '../actions/constats';
 
-const initialState: {text:string , author:string} = {
+const initialState: {text:string} = {
     text: '',
-    author: ''
   }
 
   export const quote = (state = initialState, action: any) => {

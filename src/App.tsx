@@ -15,11 +15,11 @@ const App: React.FC = () => {
    }
 
   return (
-    <div className="p-5 flex flex-wrap items-center justify-center">
-      <div className='block w-full h-60 bg-red-500 flex items-center justify-center'>
-        <textarea className="w-1/2 h-60 p-4 resize border rounded-md " id="editor" value={text} onChange={(e) => onTextUpdate(e)}></textarea>
+    <div className="container">
+      <div className='editDiv'>
+        <textarea className="resize textarea1" id="editor" value={text} onChange={(e) => onTextUpdate(e)}></textarea>
       </div>
-      <div id='preview' className='h-screen w-screen bg-gray-200' dangerouslySetInnerHTML={{'__html': marked(text)}}>
+      <div id='preview' className='preview' dangerouslySetInnerHTML={{'__html': marked(text)}}>
       
       </div>
     </div>

@@ -12,6 +12,37 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.editDiv {
+  width: 100%;
+  height: 300px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.textarea1 {
+  width: 50%;
+  height: 250px;
+  padding: 1.5rem;
+
+}
+
+.preview {
+  width: 80vw;
+  height: 100%;
+  background-color: gray;
+  padding: 2rem;
+}
 
 .svg{
   transform: scale(1.5);
